@@ -1,4 +1,11 @@
-﻿@page "/counter"
+﻿@using Microsoft.AspNetCore.Components
+@using Microsoft.AspNetCore.Components.Authorization;
+@using System.Net.Http.Json;
+@using System.Security.Claims;
+
+@inject AuthenticationStateProvider AuthStateProvider
+
+@page "/counter"
 @rendermode InteractiveAuto
 
 <PageTitle>Counter</PageTitle>
@@ -11,6 +18,12 @@
 
 @code {
     private int currentCount = 0;
+
+    protected async override void OnInitialized()
+    {
+        var authState = await AuthStateProvider.GetAuthenticationStateAsync();
+        var user = authState.User;
+    }
 
     private void IncrementCount()
     {

@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.35821.62 d17.14
+VisualStudioVersion = 17.14.35821.62
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FactoryAssetManagement", "FactoryAssetManagement\FactoryAssetManagement\FactoryAssetManagement.csproj", "{38970F9F-7D43-4C31-B4B9-EC9D0B6EB25D}"
 EndProject
